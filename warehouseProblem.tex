@@ -10,16 +10,9 @@ In this activity, we explore a fundamental property of multiplication.
 
 
 \begin{sageCell}
-g(x,y) = sin(y) - cos(x)
-plot3d(g,(x,-10,10),(y,-10,10))
+var ('x y z')
+implicit_plot3d(x^2+4*y^2+9*z^2==36, (x,-6,6), (y,-6,6), (z,-6, 6), color="red", figsize=4, opacity=.3, axes="true" )
 \end{sageCell}
-
-
-\begin{sageOutput}
-g(x,y) = sin(y) - x
-plot3d(g,(x,-10,10),(y,-10,10))
-\end{sageOutput}
-
 
 
 In a warehouse you obtain $20\%$ discount but you must pay a $15\%$
